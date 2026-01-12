@@ -71,52 +71,6 @@ body {
   gap: 1rem;
 }
 
-@media (min-width: 300px) {
-  .gallery {
-    max-width: 600px;
-
-    h1 {
-      font-size: 6rem;
-    }
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-}
-
-@media (min-width: 750px) {
-  .gallery,
-  .card {
-    max-width: 800px;
-
-    h1 {
-      font-size: 4rem;
-    }
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-
-@media (min-width: 1600px) {
-  .gallery,
-  .card {
-    max-width: 1500px;
-
-    h1 {
-      font-size: 4rem;
-    }
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .title {
   display: grid;
   grid-template-columns: 8fr 1.5fr;
@@ -168,5 +122,92 @@ div.title {
   button:hover {
     background-color: #39393920;
     transition: all 0.25s ease;
+  }
+}
+
+@media (min-width: 300px) {
+  .gallery {
+    max-width: 600px;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    .card h2 {
+      font-size: 1rem;
+    }
+
+    .card pre {
+      font-size: 0.8rem;
+    }
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .title {
+    display: grid;
+    grid-template-columns: 8fr 2.5fr;
+  }
+}
+
+@media (min-width: 750px) {
+  .gallery,
+  .card {
+    max-width: 800px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .card h2,
+    pre {
+      font-size: 1.5rem;
+    }
+
+    .card pre {
+      font-size: 1rem;
+    }
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .title {
+    display: grid;
+    grid-template-columns: 8fr 1.5fr;
+  }
+}
+
+@media (min-width: 1600px) {
+  .gallery,
+  .card {
+    max-width: 1500px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .card h2,
+    pre {
+      font-size: 1.5rem;
+    }
+
+    .card pre {
+      font-size: 1rem;
+    }
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .title {
+    display: grid;
+    grid-template-columns: 8fr 1.5fr;
   }
 }
