@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "MantouSans";
+  src: url("../../font/MantouSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "jf-openhuninn-2.1";
+  src: url("../../font/jf-openhuninn-2.1.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../../font/JetBrainsMono-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #393939;
+  font-size: 0rem;
+  border: 0rem;
+  padding: 0rem;
+  margin: 0rem;
+  font-weight: normal;
+}
+
+h1,
+h2,
+button {
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0rem;
+  background-color: #f8f8f8;
+  background-image: linear-gradient(to right, #e0e0e0 1px, transparent 1px), linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.gallery {
+  min-width: 300px;
+  max-width: 1600px;
+
+  h1 {
+    font-family: MantouSans;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0rem;
+    font-size: 4rem;
+  }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+  gap: 1rem;
+}
+
+@media (min-width: 300px) {
+  .gallery {
+    max-width: 600px;
+
+    h1 {
+      font-size: 6rem;
+    }
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .gallery {
+    max-width: 800px;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .gallery {
+    max-width: 1500px;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 8fr 1.5fr;
+}
+
+.copy-btn {
+  font-family: "jf-openhuninn-2.1";
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #b3b3b3;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.card {
+  border-radius: 16px;
+  border: 1px solid #b3b3b3;
+  background-color: #f6f6f6;
+
+  h2 {
+    font-family: "jf-openhuninn-2.1";
+    font-size: 1.5rem;
+    border: 0rem;
+    padding-left: 1rem;
+    padding-top: 1.25rem;
+    margin: 0rem;
+  }
+
+  pre {
+    font-family: "JetBrainsMono", monospace "jf-openhuninn-2.1";
+    background-color: #ffffff;
+    border-radius: 8px 8px 12px 12px;
+    border: 1px solid #b3b3b3;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+div.title {
+  button {
+    transition: all 0.25s ease;
+  }
+
+  button:hover {
+    background-color: #39393920;
+    transition: all 0.25s ease;
+  }
+}
